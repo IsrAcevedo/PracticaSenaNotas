@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructores</title>
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="body">
+    
+    <header>
+        <img src="img/logoSena.jpg" >
+        <h1>Registro de Instructor</h1>
+    </header>
+
+            
+    <main> 
+         <form class="formulario"> 
+            <legend>Los campos con borde rojo son obligatorios</legend> 
+            <div class="campos">    
+                <label >Tipo de Documento</label>
+                <select id="TipoIdentificacion" name="tipodoc" required>
+                    <option value="0">Seleccione</option>
+                    <option value="1">Cedula Ciudadania</option>
+                    <option value="2">Pasaporte</option>
+                </select>
+            </div>
+
+            <div class="campos">
+                <label for="numdoc">Numero de Documento</label>
+                <input type="text" name="numdoc" id="numdoc" placeholder="digite numero de documento" required> 
+            </div>
+
+            <div class="campos">
+                <label for="primerNombre">Primer Nombre</label>
+                <input type="text" name="pnombre" id="primerNombre" placeholder="ingrese su primer nombre" required>
+            </div>
+            <div class="campos">
+                <label for="segundoNombre">Segundo Nombre</label> 
+                <input type="text" name="snombre" id="segundoNombre" placeholder="ingrese su segundo nombre">
+            </div>
+            <div class="campos">
+                <label for="primerApellido">Primer Apellido</label> 
+                <input type="text" name="papellido" id="primerApellido" placeholder="ingrese su primer apellido" required>
+            </div>
+            <div class="campos">
+                <label for="segundoApellido">Segundo Apellido</label> 
+                <input type="text" name="sapellido" id="segundoApellido" placeholder="ingrese su segundo apellido">
+            </div>
+            <div class="campos">
+                <label for="email">email</label> 
+                <input type="email" name="email" id="email" placeholder="example@correo.com" required>
+            </div>
+            <div class="campos">
+                <label for="tel">telefono</label> 
+                <input type="tel" name="tel" id="tel" placeholder="ingrese su numero de telefono" required>
+            </div>
+
+            <div class="botones">
+                
+                <button class="btn"><a href="login.html">CANCELAR</a> </button>
+                
+                <input type="submit" value="GUARDAR" class="btn" id="btn">
+            </div>
+        </form>
+
+
+
+
+    </main>
+    
+    <script src="js/script2.js"></script>
+</body>
+</html>

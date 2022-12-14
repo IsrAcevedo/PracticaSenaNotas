@@ -1,0 +1,263 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+} 
+
+.body{
+    background-image: linear-gradient(to top, rgb(118, 88, 88) 0%, #fff 100%);
+    background-repeat: no-repeat;
+    height: 120rem;
+}
+h1{
+    color: #f0440b;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tituloPrincipal{
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+label{
+    color: black;
+    font-size: 18px;
+    text-align: end;
+    padding-right: 10px;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+header img{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.formulario{
+    padding-top: 40px; 
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    margin: auto;   
+    width: 600px;       
+    background-color: rgb(190, 184, 184);
+    border-radius: 30PX;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    
+
+}
+
+
+legend{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.botones{
+    margin-top: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+    
+}
+
+.btn{
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    background-color: #f0440b;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+   
+    
+}
+.pass {
+
+    text-align: end;
+ 
+}
+
+.pass a{
+    text-transform: capitalize;
+    color: #f0440b;;
+}
+
+
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.linkEntrada{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+.linkEntrada a{
+    display: flex;
+    flex-direction: column;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.btn:hover{
+    background-color: #583a09;
+    cursor: pointer;
+}
+.campos{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto 20px;
+    
+
+        
+}
+
+
+select, input  {
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: thistle;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+input:invalid{
+    border: 2px dashed red
+    
+}
+/* estilos login*/
+
+.contenedor-login{
+   
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto 20px;
+    
+    
+}
+
+.login legend {
+    margin-bottom: 50px;
+    
+}
+.login-logo{
+    width: 90%;
+    height: 90%;
+    margin: auto auto ;
+    background-size: cover;
+    
+    
+}
+.login{
+    
+    padding-top: 40px; 
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    background-color: rgb(201, 197, 197);
+    border-radius: 30PX;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    
+}
+.login-campos{
+    display: block;
+    text-align: center;
+    
+}
+.login input{
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 80%;
+    border-color: #f0440b;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.contenedor-principal{
+    width: 70%;
+    margin: 200px auto ;
+    
+}
+
+
+/* estilos pagina notas*/
+
+.contenedorNotas{
+    max-width: 1100px;
+    height: 400PX;
+    margin: auto auto;
+   
+   
+    background: linear-gradient(142deg, rgba(255,255,255,1) 0%, rgba(245,176,102,1) 100%);
+   border-radius: 10px;
+   box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+   
+  
+}
+
+.contenedorNotas__tabla{
+   padding-top: 5rem;
+    margin: auto;
+    font-size: 24px;
+   
+    
+}
+
+.contenedorNotas__tabla tr{
+  
+    background-image: linear-gradient(320deg, #fff 0%, rgba(241, 118, 11, 0.682) 100%);
+      
+}
+
+.contenedorNotas__tabla th , td{
+   
+    width: 10rem;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+
+.contenedorNotas__aprendiz{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    padding: 3rem;
+}
+
+.dGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    gap: 2rem;
+    
+}
+
+.dGrid div{
+   background-color: #eee7e5;
+   border-radius: 10px;
+   height: 10rem;
+}
+
+.end{
+   text-align: right;
+   margin-left: 40rem;
+}

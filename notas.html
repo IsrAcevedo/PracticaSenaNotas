@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sena_Notas</title>
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="body">
+    
+    <header>
+        <img src="img/logoSena.jpg" >
+        <h1>Notas Del Aprendiz</h1>
+    </header>
+    
+    
+    <main class="contenedorNotas"> 
+         <div class="contenedorNotas__aprendiz">
+           
+            <!-- <div>
+                <label>Tipo de Documento</label>
+                <select id="TipoIdentificacion" name="tipodoc">
+                    <option value="0">Seleccione</option>
+                    <option value="1">Cedula Ciudadania</option>
+                    <option value="2">Pasaporte</option>
+                </select>
+            </div> -->
+            <div>
+                <label for="numdoc">Numero de Documento</label>
+                <input type="text" id="numdoc" name="numdoc" placeholder="digite numero de documento" required>
+                
+            </div>
+            <div>
+                <label for="primerNombre">Aprendiz</label>
+                <input type="text" id="nAprendiz" readonly>
+            </div>
+            <div>
+                <button class="btn" onclick="buscarAprendiz()">BUSCAR</button>
+            </div>
+         </div>
+            <table class="contenedorNotas__tabla">
+                    <tr>
+                        <th>nota1</th>
+                        <th>nota2</th>
+                        <th>nota3</th>
+                        <th>nota4</th>
+                       
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" id="n1" ></td>
+                        <td><input type="text" id="n2" ></td>
+                        <td><input type="text" id="n3" ></td>
+                        <td><input type="text" id="n4" ></td>
+                       
+                        
+                    </tr>
+                    
+                    <tr>
+                        <th>promedio</th>
+                        <td><input type="text" id="prom" readonly></td>
+                        
+
+                    </tr>
+            </table>
+      
+
+
+    </main>
+
+    <div class="botones end">
+        <a class="btn" href="#" onclick="calPromedio()">GUARDAR</a>
+        <a class="btn" href="#">EDITAR</a>
+        <a class="btn" href="login.html">SALIR</a>
+        
+              
+     
+
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

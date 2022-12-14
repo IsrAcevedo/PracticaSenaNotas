@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!--<link rel="stylesheet" href="css/normalice.css">-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--<h1 class="tituloPrincipal">BIENVENIDO A CASA SOFTWARE</h1>-->
+    <main class="contenedor-principal">
+       
+        <div class="contenedor-login">
+            <div class="login-logo">
+               <img src="img/LogoSENA.png" alt="logo del sena">
+                
+            </div>
+            <div>
+                <form class="login">
+                    <legend>Digite datos de Ingreso</legend>
+                    <div class="login-campos">
+                        <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre de usuario" required>
+                                        
+                        <input type="password" id="passw" name="passw" placeholder="ingrese su contraseña" required>
+                    </div>
+                    <div class="pass">
+                        <a href="#">olvidaste su Constraseña</a>
+                    </div>
+                    <div class="botones">
+                
+                        <input type="submit" id="btningresar" value="INGRESAR" class="btn" onclick="validar()">
+
+                        
+                    </div>
+
+                    <div class="linkEntrada">
+                        <a href="aprendiz.html">Crear Cuenta Aprendiz</a> <br>
+                        <a href="instructores.html">Crear Cuenta Instructor</a>
+                    </div>
+                    
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
